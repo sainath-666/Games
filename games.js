@@ -3,26 +3,26 @@ const games = [
   {
     name: "Snake Game",
     image: "assets/snake.png",
-    playLink: "#",
-    codeLink: "#",
+    playLink: "https://sainath-666.github.io/Snake_Game_1/",
+    codeLink: "https://github.com/sainath-666/Snake_Game_1",
   },
   {
     name: "Memory Game",
     image: "assets/memory.png",
-    playLink: "#",
-    codeLink: "#",
+    playLink: "https://sainath-666.github.io/Memory_Game/",
+    codeLink: "https://github.com/sainath-666/Memory_Game",
   },
   {
     name: "Number Game",
     image: "assets/number.png",
-    playLink: "#",
-    codeLink: "#",
+    playLink: "https://sainath-666.github.io/FindMyNumber_Game/",
+    codeLink: "https://github.com/sainath-666/FindMyNumber_Game",
   },
   {
     name: "2408 Game",
     image: "assets/2408.png",
-    playLink: "#",
-    codeLink: "#",
+    playLink: "https://sainath-666.github.io/2048_Game/",
+    codeLink: "https://github.com/sainath-666/2048_Game",
   },
 ];
 
@@ -35,8 +35,8 @@ function renderGames() {
       <img src="${game.image}" alt="${game.name}" class="game-image" />
       <h2>${game.name}</h2>
       <div class="game-buttons">
-        <button onclick="window.location.href='${game.playLink}'">Play</button>
-        <button onclick="window.location.href='${game.codeLink}'">Code</button>
+        <button onclick="window.open('${game.playLink}', '_blank')">Play</button>
+        <button onclick="window.open('${game.codeLink}', '_blank')">Code</button>
       </div>
     `;
     container.appendChild(card);
