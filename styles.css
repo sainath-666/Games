@@ -1,0 +1,82 @@
+/* Main container for games */
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.game-card {
+  background: linear-gradient(135deg, #1b2b4b 60%, #22335a 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(10, 35, 66, 0.25);
+  padding: 24px 16px 16px 16px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #22335a;
+}
+
+.game-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(10, 35, 66, 0.35);
+  border-color: #2e4a7d;
+}
+
+.game-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  background: #14213d;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(10, 35, 66, 0.18);
+  padding: 8px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.game-buttons button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%);
+  color: #e3e9f7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(30, 64, 175, 0.18);
+  letter-spacing: 0.5px;
+}
+
+.game-buttons button:hover {
+  background: linear-gradient(90deg, #1e40af 60%, #2563eb 100%);
+  color: #fff;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0a2342 0%, #193660 100%);
+  margin: 0;
+  min-height: 100vh;
+  color: #e3e9f7;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 32px;
+  color: #e3e9f7;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(10, 35, 66, 0.18);
+}
+
+p {
+  text-align: center;
+  color: #b3c6e0;
+}
